@@ -1,10 +1,6 @@
 @media print {
-   .printable-content {
+   #printable-content {
       display: block !important;
-   }
-
-   .non-printable-content {
-      display: none;
    }
 }
 
