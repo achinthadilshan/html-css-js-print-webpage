@@ -1,9 +1,9 @@
 @media print {
-   #printable-content {
+   #printDiv {
       display: block !important;
    }
 }
 
-.printable-content {
+.printDiv {
    display: none;
 }
