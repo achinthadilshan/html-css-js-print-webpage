@@ -1,12 +1,13 @@
 const printDiv = () => {
-   var divContents = document.getElementById('printable-content').innerHTML
-   var a = window.open('', '')
-   a.document.write('<html>')
-   a.document.write('<body >')
-   a.document.write(divContents)
-   a.document.write('</body></html>')
-   a.print()
-   a.close()
+   const divContents = document.getElementById('printDiv').innerHTML
+   const printWindow = window.open()
+   printWindow.document.write('<html><head>')
+   printWindow.document.write('<title>Print View</title>')
+   printWindow.document.write('</head><body>')
+   printWindow.document.write(divContents)
+   printWindow.document.write('</body></html>')
+   printWindow.print()
+   printWindow.close()
 }
 
 const printBtn = document.getElementById('printBtn')
